@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="certifications">
+    <h1>Mes Certifications</h1>
+    <p>Voici mes certifications en format PDF. Vous pouvez les visualiser ou les télécharger :</p>
+    
+    <div class="certifications-grid">
+        <div class="certification-item">
+            <iframe src="{{ url_for('static', filename='certificat1.pdf') }}" width="100%" height="300px" style="border: none;"></iframe>
+            <a href="{{ url_for('static', filename='certificat1.pdf') }}" download>Télécharger le certificat 1</a>
+        </div>
+
+        <div class="certification-item">
+            <iframe src="{{ url_for('static', filename='certificat2.pdf') }}" width="100%" height="300px" style="border: none;"></iframe>
+            <a href="{{ url_for('static', filename='certificat2.pdf') }}" download>Télécharger le certificat 2</a>
+        </div>
+
+        <div class="certification-item">
+            <iframe src="{{ url_for('static', filename='certificat3.pdf') }}" width="100%" height="300px" style="border: none;"></iframe>
+            <a href="{{ url_for('static', filename='certificat3.pdf') }}" download>Télécharger le certificat 3</a>
+        </div>
+
+        <div class="certification-item">
+            <iframe src="{{ url_for('static', filename='certificat4.pdf') }}" width="100%" height="300px" style="border: none;"></iframe>
+            <a href="{{ url_for('static', filename='certificat4.pdf') }}" download>Télécharger le certificat 4</a>
+        </div>
+
+        <div class="certification-item">
+            <iframe src="{{ url_for('static', filename='certificat5.pdf') }}" width="100%" height="300px" style="border: none;"></iframe>
+            <a href="{{ url_for('static', filename='certificat5.pdf') }}" download>Télécharger le certificat 5</a>
+        </div>
+
+        <div class="certification-item">
+            <iframe src="{{ url_for('static', filename='certificat6.pdf') }}" width="100%" height="300px" style="border: none;"></iframe>
+            <a href="{{ url_for('static', filename='certificat6.pdf') }}" download>Télécharger le certificat 6</a>
+        </div>
+
+        <div class="certification-item">
+            <iframe src="{{ url_for('static', filename='certificat7.pdf') }}" width="100%" height="300px" style="border: none;"></iframe>
+            <a href="{{ url_for('static', filename='certificat7.pdf') }}" download>Télécharger le certificat 7</a>
+        </div>
+
+        <div class="certification-item">
+            <iframe src="{{ url_for('static', filename='certificat8.pdf') }}" width="100%" height="300px" style="border: none;"></iframe>
+            <a href="{{ url_for('static', filename='certificat8.pdf') }}" download>Télécharger le certificat 8</a>
+        </div>
+
+        <div class="certification-item">
+            <iframe src="{{ url_for('static', filename='certificat10.pdf') }}" width="100%" height="300px" style="border: none;"></iframe>
+            <a href="{{ url_for('static', filename='certificat10.pdf') }}" download>Télécharger le certificat 10</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
